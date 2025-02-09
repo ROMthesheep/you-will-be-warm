@@ -2,8 +2,6 @@
 
 Juego hecho para la 1-bit jam 2025
 
-<iframe frameborder="0" src="https://itch.io/embed/3297633" width="552" height="167"><a href="https://romthesheep.itch.io/you-will-be-warm">You will be warm by Rom the sheep</a></iframe>
-
 21 de diciembre de 1860
 
 La nieve ha bloqueado todos los caminos que llevan a tu hogar, y pronto bloqueará todas las rutas que conectan con tu pequeña comunidad.
