@@ -1,8 +1,6 @@
 # you will be warm
 
-![https://romthesheep.itch.io/you-will-be-warm](https://github.com/user-attachments/assets/e73437f7-4861-470a-817a-d700cb7fed87)
-
-
+[<img src="https://github.com/user-attachments/assets/e73437f7-4861-470a-817a-d700cb7fed87">](https://romthesheep.itch.io/you-will-be-warm)
 Juego hecho para la 1-bit jam 2025
 
 21 de diciembre de 1860
