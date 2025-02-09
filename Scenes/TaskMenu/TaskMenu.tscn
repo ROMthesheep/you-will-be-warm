@@ -1,0 +1,484 @@
+[gd_scene load_steps=5 format=3 uid="uid://3ythotau38nb"]
+
+[ext_resource type="Texture2D" uid="uid://d4j8tyqsh7shl" path="res://Assets/ninePatch/SimpleDialogI.png" id="1_4hpxk"]
+[ext_resource type="Theme" uid="uid://cmxlcofgxca0j" path="res://Assets/theme.tres" id="1_8xwqo"]
+[ext_resource type="Script" path="res://Scenes/TaskMenu/task_menu.gd" id="1_t6ud6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ypplp"]
+bg_color = Color(0, 0, 0, 0.729412)
+
+[node name="TaskMenu" type="Node2D"]
+script = ExtResource("1_t6ud6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 480.0
+offset_bottom = 335.0
+
+[node name="tituloContainer" type="NinePatchRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_4hpxk")
+patch_margin_left = 7
+patch_margin_top = 32
+patch_margin_right = 7
+patch_margin_bottom = 7
+
+[node name="Panel2" type="MarginContainer" parent="VBoxContainer/tituloContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/tituloContainer/Panel2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ypplp")
+
+[node name="Titulo" type="Label" parent="VBoxContainer/tituloContainer/Panel2"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Primera semana de invierno"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MainMenu" type="NinePatchRect" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("1_4hpxk")
+patch_margin_left = 6
+patch_margin_top = 7
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Panel2" type="MarginContainer" parent="VBoxContainer/MainMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/MainMenu/Panel2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ypplp")
+
+[node name="TextMargins" type="MarginContainer" parent="VBoxContainer/MainMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 9
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MainMenu/TextMargins"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="MainTaskMenu" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="toFoodMenuButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Buscar comida"
+
+[node name="toWaterMenuButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Buscar agua"
+
+[node name="toWoodMenuButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Buscar leña"
+
+[node name="toRepairMenuButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Reparar"
+
+[node name="Control" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="StartWeekButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Manos a la obra"
+
+[node name="FoodMenu" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Hunt" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Salir a cazar"
+
+[node name="Harvest" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Salir a recolectar"
+
+[node name="AskNeighbor" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Casa del vecino"
+
+[node name="EatHost" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Devorar a invitado"
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="backButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Atras
+"
+
+[node name="WaterMenu" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="creek" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Ir al arrollo"
+
+[node name="lake" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Ir al lago"
+
+[node name="fountain" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "ir a la fuente"
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="backButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Atras
+"
+
+[node name="FireLogsMenu" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="bushes" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Cortar arbustos"
+
+[node name="tree" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Cortar arbol"
+
+[node name="neighbor" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Ir a pedir madera"
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="backButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Atras
+"
+
+[node name="RepairMenu" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Snow" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Retirar nieve"
+
+[node name="Pipes" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Cañerias"
+
+[node name="Traps" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Trampas"
+
+[node name="timberMill" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Aserradero"
+
+[node name="Boat" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Barco"
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="backButton" type="Button" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Atras
+"
+
+[node name="Stats" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Food" type="Label" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/Stats"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "X Comidas"
+horizontal_alignment = 2
+
+[node name="Water" type="Label" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/Stats"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "X Agua"
+horizontal_alignment = 2
+
+[node name="Logs" type="Label" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/Stats"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "X Leña"
+horizontal_alignment = 2
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/Stats"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Hosts" type="Label" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/Stats"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "X Personas"
+horizontal_alignment = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+alignment = 2
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect6" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect7" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect8" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect9" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect10" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect11" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect12" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect13" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect14" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect15" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect16" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect17" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect18" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect19" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="ColorRect20" type="ColorRect" parent="VBoxContainer/MainMenu/TextMargins/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 2)
+layout_mode = 2
+
+[node name="tituloContainer2" type="NinePatchRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_4hpxk")
+patch_margin_left = 7
+patch_margin_top = 32
+patch_margin_right = 7
+patch_margin_bottom = 7
+
+[node name="Panel2" type="MarginContainer" parent="VBoxContainer/tituloContainer2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/tituloContainer2/Panel2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ypplp")
+
+[node name="Titulo" type="Label" parent="VBoxContainer/tituloContainer2/Panel2"]
+layout_mode = 2
+theme = ExtResource("1_8xwqo")
+text = "Tareas para la semana"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MainMenu2" type="NinePatchRect" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+texture = ExtResource("1_4hpxk")
+patch_margin_left = 6
+patch_margin_top = 7
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Panel2" type="MarginContainer" parent="VBoxContainer/MainMenu2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/MainMenu2/Panel2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ypplp")
+
+[node name="TextMargins" type="MarginContainer" parent="VBoxContainer/MainMenu2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Tareas" type="Label" parent="VBoxContainer/MainMenu2/TextMargins"]
+custom_minimum_size = Vector2(413.855, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("1_8xwqo")
+theme_override_font_sizes/font_size = 11
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu/toFoodMenuButton" to="." method="_showFoodMenu"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu/toWaterMenuButton" to="." method="_showWaterMenu"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu/toWoodMenuButton" to="." method="_showFireLogsMenu"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu/toRepairMenuButton" to="." method="_showRepairMenu"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/MainTaskMenu/StartWeekButton" to="." method="startWeek"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu/Hunt" to="." method="clickOnhunt"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu/Harvest" to="." method="clickOnHarvest"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu/AskNeighbor" to="." method="clickOnFoodNeighbor"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu/EatHost" to="." method="clickOnEatHost"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FoodMenu/backButton" to="." method="backButtonClicked"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu/creek" to="." method="clickOnCreek"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu/lake" to="." method="clickOnLake"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu/fountain" to="." method="clickOnFountain"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/WaterMenu/backButton" to="." method="backButtonClicked"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu/bushes" to="." method="clickOnBushes"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu/tree" to="." method="clickOnTree"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu/neighbor" to="." method="clickOnLogNeighbor"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/FireLogsMenu/backButton" to="." method="backButtonClicked"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/Snow" to="." method="clickOnSnow"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/Pipes" to="." method="clickOnPipes"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/Traps" to="." method="clickOnTraps"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/timberMill" to="." method="clickOnTimderMill"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/Boat" to="." method="clickOnBoat"]
+[connection signal="pressed" from="VBoxContainer/MainMenu/TextMargins/HBoxContainer/RepairMenu/backButton" to="." method="backButtonClicked"]

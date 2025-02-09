@@ -1,0 +1,467 @@
+[gd_scene load_steps=8 format=3 uid="uid://s84fxrlqq75t"]
+
+[ext_resource type="Theme" uid="uid://cmxlcofgxca0j" path="res://Assets/theme.tres" id="1_1hk3f"]
+[ext_resource type="Texture2D" uid="uid://bmtr28k3pak64" path="res://Assets/winstate.png" id="1_5y5po"]
+[ext_resource type="Script" path="res://Scenes/end/end.gd" id="1_cwv2o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4b4y2"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_xoele"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/VBoxContainer/Panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/VBoxContainer/Panel2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/VBoxContainer/Panel3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/VBoxContainer/Panel4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/VBoxContainer/Panel5:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/VBoxContainer/Panel6:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/VBoxContainer/Panel7:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/VBoxContainer/Panel8:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/VBoxContainer/Panel9:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_318y1"]
+resource_name = "new_animation"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/VBoxContainer/Panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/VBoxContainer/Panel2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/VBoxContainer/Panel3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(4, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/VBoxContainer/Panel4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5.5, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/VBoxContainer/Panel5:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(7, 8.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/VBoxContainer/Panel6:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(8.5, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/VBoxContainer/Panel7:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(10, 11.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/VBoxContainer/Panel8:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(11.5, 13),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/VBoxContainer/Panel9:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(13.7333, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_woobk"]
+_data = {
+"RESET": SubResource("Animation_xoele"),
+"new_animation": SubResource("Animation_318y1")
+}
+
+[node name="End" type="Node2D"]
+script = ExtResource("1_cwv2o")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1hk3f")
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Control2" type="Control" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("1_1hk3f")
+text = "Un año más. Un invierno más"
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1hk3f")
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel2/MarginContainer"]
+layout_mode = 2
+text = "Resistes"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel3/MarginContainer"]
+layout_mode = 2
+text = "Pues tu eres hijo de esta tierra"
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel4/MarginContainer"]
+layout_mode = 2
+text = "Sabes perfectamente que no es la vida más comoda"
+horizontal_alignment = 1
+
+[node name="Panel5" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel5/MarginContainer"]
+layout_mode = 2
+text = "Sabes por qué todo el mundo se va"
+horizontal_alignment = 1
+
+[node name="Panel6" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 29.305)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel6/MarginContainer"]
+layout_mode = 2
+text = "Pero lo que casi nadie sabe"
+horizontal_alignment = 1
+
+[node name="Panel7" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 51.66)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel7/MarginContainer"]
+layout_mode = 2
+text = "Es como se siente el primer rayo
+ de sol de la primavera sobre el rostro tras el duro invierno"
+horizontal_alignment = 1
+
+[node name="Panel8" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 62.655)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel8/MarginContainer"]
+layout_mode = 2
+text = "Solo respira, disfruta de este calor
+estos momentos nunca seran para siempre
+pero siempre seran tuyos"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel9" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 62.655)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4b4y2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/Panel9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Panel9/MarginContainer"]
+layout_mode = 2
+text = "-Gracias por jugar -
+-FIN-"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+z_index = -3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5y5po")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_woobk")
+}
+autoplay = "new_animation"

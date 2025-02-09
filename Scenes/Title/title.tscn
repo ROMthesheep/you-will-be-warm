@@ -1,0 +1,364 @@
+[gd_scene load_steps=35 format=3 uid="uid://diksse4i6447y"]
+
+[ext_resource type="Script" path="res://Scenes/Title/title.gd" id="1_dqvoq"]
+[ext_resource type="Texture2D" uid="uid://mbotoak6cdpl" path="res://Assets/OutSide hut/frame1.png" id="1_rr0fm"]
+[ext_resource type="Texture2D" uid="uid://bu4cehq0hjvxr" path="res://Assets/OutSide hut/frame2.png" id="2_r67vc"]
+[ext_resource type="Texture2D" uid="uid://n8isokvvfs5x" path="res://Assets/OutSide hut/frame3.png" id="3_jd4sp"]
+[ext_resource type="Texture2D" uid="uid://b0tptnyn2qs4u" path="res://Assets/OutSide hut/frame4.png" id="4_i1ofj"]
+[ext_resource type="Texture2D" uid="uid://by5p3okhdx7u2" path="res://Assets/OutSide hut/frame5.png" id="5_nij6q"]
+[ext_resource type="Texture2D" uid="uid://diy20lyembsoh" path="res://Assets/OutSide hut/frame6.png" id="6_sy8nw"]
+[ext_resource type="Texture2D" uid="uid://m1drax0gjfes" path="res://Assets/OutSide hut/frame7.png" id="7_v2nf3"]
+[ext_resource type="Texture2D" uid="uid://c47u1q7ssvp8o" path="res://Assets/OutSide hut/frame8.png" id="8_3r4ou"]
+[ext_resource type="Texture2D" uid="uid://bey085a1on5ly" path="res://Assets/OutSide hut/frame9.png" id="9_xyper"]
+[ext_resource type="Texture2D" uid="uid://e4rrnpmhxcur" path="res://Assets/OutSide hut/frame10.png" id="10_ftdg0"]
+[ext_resource type="Texture2D" uid="uid://cotixf7d47gj" path="res://Assets/OutSide hut/frame11.png" id="11_clh6o"]
+[ext_resource type="Texture2D" uid="uid://bguqsxt0ino8n" path="res://Assets/OutSide hut/frame12.png" id="12_pk2uw"]
+[ext_resource type="Texture2D" uid="uid://cixjudti46nlo" path="res://Assets/OutSide hut/frame13.png" id="13_ttat7"]
+[ext_resource type="Texture2D" uid="uid://c3etf203oif28" path="res://Assets/OutSide hut/frame14.png" id="14_q4anx"]
+[ext_resource type="Texture2D" uid="uid://x61vflpknwfr" path="res://Assets/OutSide hut/frame15.png" id="15_a167p"]
+[ext_resource type="Texture2D" uid="uid://0nes5dt6kyih" path="res://Assets/OutSide hut/frame16.png" id="16_fvcmq"]
+[ext_resource type="Texture2D" uid="uid://ca52d28wteu67" path="res://Assets/OutSide hut/frame17.png" id="17_bia28"]
+[ext_resource type="Texture2D" uid="uid://cgvky4wgid6vj" path="res://Assets/OutSide hut/frame18.png" id="18_bpb0j"]
+[ext_resource type="Texture2D" uid="uid://cdyj1wtkws54f" path="res://Assets/OutSide hut/frame19.png" id="19_wyned"]
+[ext_resource type="Texture2D" uid="uid://by671d76rypwj" path="res://Assets/OutSide hut/frame20.png" id="20_c88v5"]
+[ext_resource type="Texture2D" uid="uid://bns4i6kin0pfs" path="res://Assets/OutSide hut/frame21.png" id="21_8tmwi"]
+[ext_resource type="Texture2D" uid="uid://bwqqcrgffjh35" path="res://Assets/OutSide hut/frame22.png" id="22_tr071"]
+[ext_resource type="Texture2D" uid="uid://b0irib1dvoik3" path="res://Assets/OutSide hut/frame23.png" id="23_hh488"]
+[ext_resource type="Texture2D" uid="uid://d4j8tyqsh7shl" path="res://Assets/ninePatch/SimpleDialogI.png" id="24_iv4na"]
+[ext_resource type="FontFile" uid="uid://ci5c5w6m0x5af" path="res://Assets/Font/dogicapixel.ttf" id="24_tc16i"]
+[ext_resource type="AudioStream" uid="uid://by21f4cskymh2" path="res://Assets/SFX/15419__pagancow__dorm-door-opening (mp3cut.net).wav" id="30_rdu8m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s45b2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rr0fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r67vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jd4sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i1ofj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nij6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sy8nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v2nf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3r4ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xyper")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ftdg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_clh6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pk2uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ttat7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q4anx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a167p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fvcmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bia28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bpb0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wyned")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_c88v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8tmwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_tr071")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hh488")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_tr071")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8tmwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_c88v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wyned")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bpb0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bia28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fvcmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a167p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q4anx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ttat7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pk2uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_clh6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ftdg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xyper")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3r4ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v2nf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sy8nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nij6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i1ofj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jd4sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r67vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_rr0fm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="Animation" id="Animation_3vmfh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cvwpm"]
+resource_name = "pulseTExt"
+length = 5.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.03333, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rkqh3"]
+_data = {
+"RESET": SubResource("Animation_3vmfh"),
+"pulseTExt": SubResource("Animation_cvwpm")
+}
+
+[sub_resource type="Animation" id="Animation_wk4m3"]
+resource_name = "FadeOut"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TitleScreen:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.46667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lp4sq"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f8dhw"]
+_data = {
+"FadeOut": SubResource("Animation_wk4m3"),
+"RESET": SubResource("Animation_lp4sq")
+}
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_dqvoq")
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Knock" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("30_rdu8m")
+volume_db = 1.908
+pitch_scale = 0.85
+
+[node name="TitleScreen" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="TitleScreen"]
+position = Vector2(576, 324)
+scale = Vector2(1.01408, 1.19118)
+sprite_frames = SubResource("SpriteFrames_s45b2")
+autoplay = "default"
+
+[node name="Panel2" type="Panel" parent="TitleScreen"]
+offset_left = 376.0
+offset_top = 32.0
+offset_right = 1112.0
+offset_bottom = 160.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Panel" type="NinePatchRect" parent="TitleScreen/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_iv4na")
+
+[node name="MarginContainer" type="MarginContainer" parent="TitleScreen/Panel2/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TitleScreen/Panel2/Panel/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="TitleScreen/Panel2/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("24_tc16i")
+theme_override_font_sizes/font_size = 36
+text = "You will be warm again"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TitleScreen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_bottom = 45
+
+[node name="Label" type="Label" parent="TitleScreen/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("24_tc16i")
+theme_override_font_sizes/font_size = 18
+text = "Press any key to continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TitleScreen/MarginContainer/Label"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_rkqh3")
+}
+autoplay = "pulseTExt"
+
+[node name="Panel3" type="Panel" parent="TitleScreen"]
+offset_left = 960.0
+offset_top = 592.0
+offset_right = 1144.0
+offset_bottom = 640.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Panel" type="NinePatchRect" parent="TitleScreen/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_iv4na")
+
+[node name="MarginContainer" type="MarginContainer" parent="TitleScreen/Panel3/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TitleScreen/Panel3/Panel/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Label" type="Label" parent="TitleScreen/Panel3/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("24_tc16i")
+theme_override_font_sizes/font_size = 15
+text = "Game by 
+RomTheSheep"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="animationController" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_f8dhw")
+}
+
+[connection signal="animation_finished" from="animationController" to="." method="_on_animation_player_2_animation_finished"]
